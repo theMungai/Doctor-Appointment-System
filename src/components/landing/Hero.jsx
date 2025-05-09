@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCirclePlay } from '@fortawesome/free-solid-svg-icons';
+import Services from './Services';
 
 function ResultsInNumbers({count, title, valueType}){
   return(
@@ -106,7 +107,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="why-us flex items-center justify-between">
+      <div className="why-us flex items-center justify-between mb-[150px]">
         <div className="choose-us-text basis-[48%]">
           <h1 className='text-[32px] font-bold font-dmsans text-customTealBlue mb-5'>You have lots of reasons to choose us</h1>
           <p className='font-normal text-[16px] leading-[1.8rem] text-[#555555] mb-12'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium molestiae, quasi quidem quaerat voluptatum porro expedita iusto impedit sapiente facere excepturi unde deleniti dolore accusantium quod nisi velit, aperiam voluptates.</p>
@@ -122,6 +123,8 @@ const Hero = () => {
           <img src="/src/assets/images/services-choose-us.jpg" alt="Why Choose Us" className='w-full' />
         </div>
       </div>
+
+      <Services/>
     </div>
   )
 }

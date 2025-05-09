@@ -23,7 +23,7 @@ function NavBar() {
   return (
     <nav className="flex items-center justify-between font-lexend py-5 px-20">
             <a href="#" className="text-customTealBlue text-[26px] font-bold logo flex items-center">
-                <img src={logo} alt="Logo" className="w-[100px] " />
+                <img src={logo} alt="Logo" className="w-[60px] " />
                 Health<span className="text-customGreen">care</span>
             </a>
         
