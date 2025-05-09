@@ -2,6 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCirclePlay } from '@fortawesome/free-solid-svg-icons';
 import Services from './Services';
+import TeamMembers from './TeamMembers';
 
 function ResultsInNumbers({count, title, valueType}){
   return(
@@ -125,6 +126,7 @@ const Hero = () => {
       </div>
 
       <Services/>
+      <TeamMembers/>
     </div>
   )
 }
