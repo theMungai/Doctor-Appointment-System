@@ -23,7 +23,7 @@ const Footer = () => {
   const socialLinks = ['Facebook', 'Twitter', 'Instagram', 'LinkeIn', 'Youtube'];
 
   return (
-    <footer className='absolute bottom-0 w-full bg-customTealBlue mt-[60px] p-[100px] flex gap-x-[200px]'>
+    <footer className='relative bottom-0 w-full bg-customTealBlue mt-[60px] p-[100px] flex gap-x-[200px]'>
       <div className="copyrights">
         <a href='' className="company-logo flex items-center mb-4 ">
           <img src={logo} alt="Company logo" className='w-[100px]' />
