@@ -20,11 +20,11 @@ const Testimonials = () => {
         <p className='leading-[1.7rem] text-[16px] text-[#555555] text-center mx-auto w-[40%] mb-[50px]'>Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar elementum tempus hac tellus libero accumsan. </p>
 
         <div className="testimonial-container flex flex-wrap items-center justify-between">
-            <TestimonialBluePrint image={1} heading={'“An amazing service”'} name={"John Carter"} profession={"CEO at Google"}/>
+            <TestimonialBluePrint image={1} heading='“An amazing service”' name="John Carter" profession="CEO at Google"/>
 
-            <TestimonialBluePrint image={2} heading={'“One of a kind service”'} name={"Sophie Moore"} profession={"MD at Facebook"}/>
+            <TestimonialBluePrint image={2} heading='“One of a kind service”' name="Sophie Moore" profession="MD at Facebook"/>
 
-            <TestimonialBluePrint image={3} heading={'“The best service”'} name={"Andy Smith"} profession={"CEO Dot Austere"}/>
+            <TestimonialBluePrint image={3} heading='“The best service”' name="Andy Smith" profession="CEO Dot Austere"/>
         </div>
     </div>
   )

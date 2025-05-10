@@ -5,6 +5,14 @@ import Services from './Services';
 import TeamMembers from './TeamMembers';
 import Testimonials from './Testimonials';
 
+function Professionals({image}){
+  return(
+    <img src={`/src/assets/images/professional-${image}.jpg`} 
+    alt="User" 
+    className="cursor-pointer w-8 h-8 rounded-full border-2 border-white -mx-[6px] object-cover"/>
+  )
+}
+
 function ResultsInNumbers({count, title, valueType}){
   return(
     <div className='text-center'>
@@ -51,23 +59,17 @@ const Hero = () => {
                 <span className="text-gray-700 text-[11px] font-medium text-lg">Our Professionals</span>
 
                 <div className="flex items-center"> 
-                        <img src="/src/assets/images/professional-1.jpg" alt="User" className="cursor-pointer w-8 h-8 rounded-full border-2 border-white -mx-[6px] object-cover"/>
+                  <Professionals image={1}/>
+                  <Professionals image={2}/>
+                  <Professionals image={3}/>
+                  <Professionals image={4}/>
+                  <Professionals image={5}/>
+                  <Professionals image={6}/>
+                  <Professionals image={7}/> 
 
-                        <img src="/src/assets/images/professional-2.jpg" alt="User" className="cursor-pointer w-8 h-8 rounded-full border-2 border-white -mx-[6px] object-cover"/>
-
-                        <img src="/src/assets/images/professional-3.jpg" alt="User" className="cursor-pointer w-8 h-8 rounded-full border-2 border-white -mx-[6px] object-cover"/>
-
-                        <img src="/src/assets/images/professional-4.jpg" alt="User" className="cursor-pointer w-8 h-8 rounded-full border-2 border-white -mx-[6px] object-cover"/>
-
-                        <img src="/src/assets/images/professional-5.jpg" alt="User" className="cursor-pointer w-8 h-8 rounded-full border-2 border-white -mx-[6px] object-cover"/>
-
-                        <img src="/src/assets/images/professional-6.jpg" alt="User" className="cursor-pointer w-8 h-8 rounded-full border-2 border-white -mx-[6px] object-cover"/>
-
-                        <img src="/src/assets/images/professional-7.jpg" alt="User" className="cursor-pointer w-8 h-8 rounded-full border-2 border-white -mx-[6px] object-cover"/>
-
-                    <div className="w-8 h-8 rounded-full bg-customTealBlue border-2 border-white flex items-center justify-center -mx-[8px]"> 
-                        <span className="text-white text-sm">30+</span>  
-                    </div>
+                  <div className="w-8 h-8 rounded-full bg-customTealBlue border-2 border-white flex items-center justify-center -mx-[8px]"> 
+                      <span className="text-white text-sm">30+</span>  
+                  </div>
                 </div>
             </div>
           </div>
@@ -102,10 +104,10 @@ const Hero = () => {
       <div className="results-numbers-container">
         <h1 className='text-center text-[32px] mb-[70px] font-dmsans font-bold text-customTealBlue'>Our results in numbers</h1>
         <div className='results-numbers flex items-center justify-around mb-[150px]'>
-          <ResultsInNumbers count={99} valueType={"%"} title={"Customer satisfaction"}/>
-          <ResultsInNumbers count={15} valueType={"k"} title={"Online Patients"}/>
-          <ResultsInNumbers count={12} valueType={"k"} title={"Patients Recovered"}/>
-          <ResultsInNumbers count={240} valueType={"%"} title={"Company growth"}/>
+          <ResultsInNumbers count={99} valueType="%" title="Customer satisfaction"/>
+          <ResultsInNumbers count={15} valueType="k" title="Online Patients"/>
+          <ResultsInNumbers count={12} valueType="k" title="Patients Recovered"/>
+          <ResultsInNumbers count={240} valueType="%" title="Company growth"/>
         </div>
       </div>
 
@@ -121,8 +123,8 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="choose-us-image basis-[48%]">
-          <img src="/src/assets/images/services-choose-us.jpg" alt="Why Choose Us" className='w-full' />
+        <div className="choose-us-image ">
+          <img src="/src/assets/images/services-choose-us.jpg" alt="Why Choose Us" className='w-full basis-[48%]' />
         </div>
       </div>
 

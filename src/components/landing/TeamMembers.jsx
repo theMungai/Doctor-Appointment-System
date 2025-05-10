@@ -27,12 +27,12 @@ const TeamMembers = () => {
         <h1 className='text-customTealBlue text-[32px] mb-[20px] font-bold text-center'>Meet our team members</h1>
         <p className='leading-[1.7rem] text-[16px] text-[#555555] text-center mx-auto w-[40%] mb-[60px]'>Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar elementum tempus hac tellus libero accumsan. </p>
         <div className='flex items-center gap-7 flex-wrap'>
-            <Member image={1} name={"John Carter"} profession={"ceo & co-founder"}/>
-            <Member image={2} name={"Sophie Moore"} profession={"dental specialist"}/>
-            <Member image={3} name={"Matt Cannon"} profession={"orthopedic"}/>
-            <Member image={4} name={"Andy Smith"} profession={"brain surgeon"}/>
-            <Member image={5} name={"Lily Woods"} profession={"heart specialist"}/>
-            <Member image={6} name={"Patrick Meyer"} profession={"eye specialist"}/>
+            <Member image={1} name="John Carter" profession="ceo & co-founder"/>
+            <Member image={2} name="Sophie Moore" profession="dental specialist"/>
+            <Member image={3} name="Matt Cannon" profession="orthopedic"/>
+            <Member image={4} name="Andy Smith" profession="brain surgeon"/>
+            <Member image={5} name="Lily Woods" profession="heart specialist"/>
+            <Member image={6} name="Patrick Meyer" profession="eye specialist"/>
         </div>
     </div>
     

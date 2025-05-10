@@ -20,7 +20,7 @@ const Footer = () => {
   const productLinks = ['Features', 'Pricing', 'Case studies', 'Reviews', 'Updates'];
   const companyLinks = ['About', 'Contact us', 'Careers', 'Culture', 'Blog'];
   const supportLinks = ['Getting started', 'Help center', 'Server status', 'Report a bug', 'Chat support'];
-  const socialLinks = ['Facebook', 'Twitter', 'Instagram', 'LinkeIn', 'Youtube'];
+  const socialLinks = ['Facebook', 'Twitter', 'Instagram', 'LinkedIn', 'Youtube'];
 
   return (
     <footer className='relative bottom-0 w-full bg-customTealBlue mt-[60px] p-[100px] flex gap-x-[200px]'>
