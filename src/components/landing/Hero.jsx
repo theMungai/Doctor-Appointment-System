@@ -3,12 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCirclePlay } from '@fortawesome/free-solid-svg-icons';
 import Services from './Services';
 import TeamMembers from './TeamMembers';
+import Testimonials from './Testimonials';
 
 function ResultsInNumbers({count, title, valueType}){
   return(
     <div className='text-center'>
-      <h1 className='text-[44px] font-bold font-dmsans mb-4 text-customTealBlue'>{count}<span className='text-[#007E8580]'>{valueType}</span></h1>
-      <p className='font-dmsans font-bold text-[24px] text-[#333333]'>{title}</p>
+      <h1 className='text-[40px] font-bold font-dmsans mb-4 text-customTealBlue'>{count}<span className='text-[#007E8580]'>{valueType}</span></h1>
+      <p className='font-dmsans font-bold text-[20px] text-[#333333]'>{title}</p>
     </div>
   )
 }
@@ -18,12 +19,12 @@ const Hero = () => {
     <div className='py-8 px-[130px] mt-10'>
       <div className='container flex items-center justify-between mb-20'>
         <div className='hero-text-container font-lato basis-[48%]'>
-            <h1 className='text-[#333] text-[40px] mb-7'>Providing Quality <span className='text-customTealBlue'>Healthcare</span> For A <span className='text-customGreen'>Brighter</span> And <span className='text-customGreen'>Healthy</span> Future</h1>
+            <h1 className='text-[#333] text-[35px] mb-7'>Providing Quality <span className='text-customTealBlue'>Healthcare</span> For A <span className='text-customGreen'>Brighter</span> And <span className='text-customGreen'>Healthy</span> Future</h1>
 
-            <p className='text-[#333] text-[20px] mb-[105px]'>At our hospital, we are dedicated to providing exceptional medical care to our patients and their families. Our experienced team of medical professionals, cutting-edge technology, and compassionate approach make us a leader in the healthcare industry</p>
+            <p className='text-[#333] text-[18px] mb-[105px]'>At our hospital, we are dedicated to providing exceptional medical care to our patients and their families. Our experienced team of medical professionals, cutting-edge technology, and compassionate approach make us a leader in the healthcare industry</p>
 
             <div className="hero-buttons flex gap-x-11">
-                <button className='bg-customTealBlue text-white font-lexend text-[1.25rem] rounded-[8px] py-[13px] px-[40px]'>Appointments</button>
+                <button className='bg-customTealBlue text-white font-lexend text-[1.2rem] rounded-[8px] py-[13px] px-[40px]'>Appointments</button>
                 <button>
                     <div className='flex items-center gap-x-6'>
                         <FontAwesomeIcon icon={faCirclePlay} className='text-customTealBlue text-[50px]'/>
@@ -74,7 +75,7 @@ const Hero = () => {
       </div>
 
       <div className="find-a-doctor-container mb-[150px] ">
-        <h1 className='text-[36px] text-black font-dmsans font-bold mb-8'>Find A Doctor</h1>
+        <h1 className='text-[32px] text-black font-dmsans font-bold mb-8'>Find A Doctor</h1>
         <form className="flex flex-wrap items-center gap-4 justify-between p-4 bg-white rounded-lg">
           <div className='flex gap-x-10 items-center'>
             <input type="text" placeholder="Name" required className="flex-1 min-w-[150px] w-[360px] p-4 outline-none border border-customTealBlue rounded-[8px] [8px] placeholder:text-[16px] text-[#555555] font-light"/>
@@ -99,7 +100,7 @@ const Hero = () => {
       </div>
 
       <div className="results-numbers-container">
-        <h1 className='text-center text-[36px] mb-[70px] font-dmsans font-bold text-customTealBlue'>Our results in numbers</h1>
+        <h1 className='text-center text-[32px] mb-[70px] font-dmsans font-bold text-customTealBlue'>Our results in numbers</h1>
         <div className='results-numbers flex items-center justify-around mb-[150px]'>
           <ResultsInNumbers count={99} valueType={"%"} title={"Customer satisfaction"}/>
           <ResultsInNumbers count={15} valueType={"k"} title={"Online Patients"}/>
@@ -127,6 +128,7 @@ const Hero = () => {
 
       <Services/>
       <TeamMembers/>
+      <Testimonials/>
     </div>
   )
 }
