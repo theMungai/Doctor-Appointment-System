@@ -1,9 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCirclePlay } from '@fortawesome/free-solid-svg-icons';
-import Services from './Services';
-import TeamMembers from './TeamMembers';
-import Testimonials from './Testimonials';
 import FindDoctor from '../common/FindDoctor';
 
 function Professionals({image}){
@@ -105,10 +102,6 @@ const Hero = () => {
           <img src="/src/assets/images/services-choose-us.jpg" alt="Why Choose Us" className='w-full basis-[48%]' />
         </div>
       </div>
-
-      <Services/>
-      <TeamMembers/>
-      <Testimonials/>
     </div>
   )
 }
