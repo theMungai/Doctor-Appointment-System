@@ -2,7 +2,7 @@ import React from 'react'
 
 const FindDoctor = () => {
   return (
-    <div className="find-a-doctor-container mb-[150px] ">
+    <div className="find-a-doctor-container px-[130px] mb-[150px] ">
         <h1 className='text-[32px] text-black font-dmsans font-bold mb-8'>Find A Doctor</h1>
         <form className="flex flex-wrap items-center gap-4 justify-between p-4 bg-white rounded-lg">
           <div className='flex gap-x-10 items-center'>
