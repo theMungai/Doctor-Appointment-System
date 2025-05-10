@@ -3,7 +3,9 @@ import Layout from '../components/Layout'
 const ServicesPage = () => {
   return (
     <div>
-      <Layout/>
+      <Layout>
+        
+      </Layout>
     </div>
   )
 }
