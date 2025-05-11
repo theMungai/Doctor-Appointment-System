@@ -3,7 +3,7 @@ import React from 'react'
 const Contact = () => {
   return (
     <div>
-      <div className="hero relative  mb-[150px] py-10 bg-[url('/src/assets/images/service-hero.jpg')] bg-cover bg-center min-h-screen grid ">
+      <div className="hero relative  mb-[150px] py-10 bg-[url('/images/service-hero.jpg')] bg-cover bg-center min-h-screen grid ">
         <div className="absolute top-0 inset-0 bg-black/50 z-0"></div>
       </div>
 
