@@ -22,7 +22,7 @@ function FeedBack({image}){
 
 const CustomerFeedBacks = () => {
   return (
-    <div className = "font-montserrat px-[130px]">
+    <div className = "font-montserrat px-[130px] mb-[100px]">
         <h1 className = "text-customTealBlue text-[36px] font-extrabold text-center mb-2.5">what our customers say</h1>
         <p className ="text-[#555555] text-[16px] text-center mb-[60px] mx-auto w-[60%]">Our patients consistently praise the care, compassion, and professionalism they receive at our hospital. From the moment they walk in, they feel heard, supported, and treated with the utmost respect. Whether it’s a routine visit or a life-saving procedure, we strive to deliver exceptional healthcare experiences every single time.</p>
 
