@@ -9,8 +9,8 @@ function NavBar() {
         {to: "/", label: "Home"},
         {to: "/services", label: "Service"},
         {to: "/contact-us", label: "Contact Us"},
-        {to: "/help", label: "Help"},
-        {to: "/blogs", label: "Blogs"},
+        {/*to: "/help",*/ label: "Help"},
+        {/* to: "/blogs",*/ label: "Blogs"},
     ]
 
     const navItem = navItems.map((item) => {

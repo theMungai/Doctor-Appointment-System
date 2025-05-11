@@ -17,10 +17,10 @@ function App() {
           <Route path='/' element= {<LandingPage/>}/>
           <Route path='/services' element= {<ServicesPage/>}/>
           <Route path='/contact-us' element= {<ContactUsPage/>}/>
-          <Route path='/help' element= {<HelpPage/>}/>
+          {/* <Route path='/help' element= {<HelpPage/>}/>
           <Route path='/blogs' element= {<BlogsPage/>}/>
           <Route path='/sign-up' element= {<SignUpPage/>}/>
-          <Route path='/log-in' element= {<SignInPage/>}/>
+          <Route path='/log-in' element= {<SignInPage/>}/> */}
         </Routes>
       </Router>
      
