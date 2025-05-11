@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from '../../assets/images/logo.png'
 
 function FooterColumn({ title, links }) {
   return (
@@ -26,7 +25,7 @@ const Footer = () => {
     <footer className='relative bottom-0 w-full bg-customTealBlue mt-[60px] p-[100px] flex gap-x-[200px]'>
       <div className="copyrights">
         <a href='' className="company-logo flex items-center mb-4 ">
-          <img src={logo} alt="Company logo" className='w-[100px]' />
+        <img src="/images/logo.png" alt="Logo" className='w-[100px]'/>
           <h1 className='text-white text-[26px] font-bold font-lexend'>Healthcare</h1>
         </a>
         <p className='text-white font-dmsans'>Copyright &#169; 2022</p>

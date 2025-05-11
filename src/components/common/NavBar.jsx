@@ -1,6 +1,4 @@
-// NavBar.jsx
 import React from 'react';
-import logo from '../../assets/images/logo.png';
 import { Link } from 'react-router-dom';
 
 function NavBar() {
@@ -26,7 +24,7 @@ function NavBar() {
   return (
     <nav className="flex items-center justify-between font-lexend py-5 px-20">
             <a href="#" className="text-customTealBlue text-[24px] font-bold logo flex items-center">
-                <img src={logo} alt="Logo" className="w-[60px] " />
+            <img src="/images/logo.png" alt="Logo" className='w-[60px]'/>
                 Health<span className="text-customGreen">care</span>
             </a>
         
