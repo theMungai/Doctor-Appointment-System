@@ -15,7 +15,7 @@ function FeedBack({image}){
             </div>
             <p className = "text-[#737373] text-[13px] leading-6 my-5 ">I was incredibly nervous before my surgery, but the doctors and nurses made me feel completely at ease. Their professionalism, empathy, and constant reassurance turned a stressful situation into one I could handle with confidence. I’m truly grateful for the outstanding care I received.</p>
 
-            <img src={`src/assets/images/customer-${image}.jpg`} alt="Customer feedback" className = "w-[45px] h-[45px] rounded-full"/>
+            <img src={`public/images/customer-${image}.jpg`} alt="Customer feedback" className = "w-[45px] h-[45px] rounded-full"/>
         </div>
     )
 }

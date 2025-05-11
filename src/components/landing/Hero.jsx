@@ -5,7 +5,7 @@ import FindDoctor from '../common/FindDoctor';
 
 function Professionals({image}){
   return(
-    <img src={`/src/assets/images/professional-${image}.jpg`} 
+    <img src={`public/images/professional-${image}.jpg`} 
     alt="User" 
     className="cursor-pointer w-8 h-8 rounded-full border-2 border-white -mx-[6px] object-cover"/>
   )
@@ -43,7 +43,7 @@ const Hero = () => {
         <div className='relative hero-image-container basis-[48%]'>
           <div className="relative rounded-blob w-[600px] h-[600px] bg-gradient-to-br from-customTealBlue to-customGreen  ">
             <div className="relative w-[600px] h-[600px] right-0 top-[55%] transform -translate-y-1/2 z-10 rounded-imageBlob overflow-hidden">
-                <img src="/src/assets/images/home-hero.png" alt="" className='w-full h-full object-cover absolute ' />     
+                <img src="public/images/home-hero.png" alt="" className='w-full h-full object-cover absolute ' />     
             </div>
           </div>
 
@@ -99,7 +99,7 @@ const Hero = () => {
         </div>
 
         <div className="choose-us-image ">
-          <img src="/src/assets/images/services-choose-us.jpg" alt="Why Choose Us" className='w-full basis-[48%]' />
+          <img src="public/images/services-choose-us.jpg" alt="Why Choose Us" className='w-full basis-[48%]' />
         </div>
       </div>
     </div>
