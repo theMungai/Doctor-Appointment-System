@@ -5,7 +5,7 @@ const logos = ['google', 'facebook', 'youtube', 'pinterest', 'twitch', 'webflow'
 function CompanyLogo({ image }) {
   return (
     <img
-      src={`public/images/brand-${image}.png`}
+      src={`images/brand-${image}.png`}
       alt={`${image} logo`}
       className="w-[130px] h-[40px] object-contain mx-7 transform transition-transform duration-300 ease-in-out hover:scale-110"
     />
