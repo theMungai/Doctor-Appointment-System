@@ -41,36 +41,34 @@ Built using **ReactJS** with **Vite** for fast development, and styled using **T
 
 ```text
 Doctor-Appointment-App/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── assets/                # Images, icons, etc.
-│   ├── components/            # Reusable UI components
-│   │   ├── common/            # Buttons, Input, Navbar, Footer, etc.
-│   │   ├── landing/           # Hero, Features, etc.
-│   │   ├── admin/             # Sidebar, DashboardWidgets, Tables
-│   │   └── blog/              # BlogCard, BlogList
-│   ├── pages/                # Route-level components (pages)
-│   │   ├── LandingPage.jsx
-│   │   ├── ServicesPage.jsx
-│   │   ├── ContactUsPage.jsx
-│   │   ├── HelpPage.jsx
-│   │   ├── BlogsPage.jsx
-│   │   ├── SignUpPage.jsx
-│   │   ├── SignInPage.jsx
-│   │   └── AdminPanel.jsx
-│   ├── routes/               # React Router routes
-│   │   └── AppRoutes.jsx
-│   ├── hooks/                # Custom hooks
-│   ├── utils/                # Utility functions
-│   ├── context/              # Context API providers
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css             # Tailwind CSS entry
+├── public/                     # Public assets (favicon, etc.)
+├── src/                        # Frontend source code
+│   ├── assets/                 # Static images and icons
+│   ├── components/             # Reusable UI components
+│   │   ├── common/             # Navbar, Footer, Buttons, etc.
+│   │   ├── landing/            # Hero, Features
+│   │   ├── admin/              
+│   │   └── blog/               
+│   ├── pages/                  # Application pages
+│   ├── routes/                 # React Router routes
+│   ├── hooks/                  # Custom React hooks
+│   ├── utils/                  # Utility functions
+│   ├── context/                # React Context API providers
+│   ├── App.jsx                 # Root component
+│   ├── main.jsx               
+│   └── index.css               
+├── backend/                    # Backend (Vanilla Python)
+│   ├── app.py                  # Server entry point
+│   ├── routes/                 # Route handlers (auth, booking)
+│   ├── models/                 # Database models & connection
+│   ├── utils/                  
+│   └── data/                   
 ├── tailwind.config.js
 ├── postcss.config.js
 ├── package.json
-└── vite.config.js
+├── vite.config.js
+└── README.md
+
 ```
 
 ## 📦 Getting Started
