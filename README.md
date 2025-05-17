@@ -41,33 +41,44 @@ Built using **ReactJS** with **Vite** for fast development, and styled using **T
 
 ```text
 Doctor-Appointment-App/
-├── public/                     # Public assets (favicon, etc.)
-├── src/                        # Frontend source code
-│   ├── assets/                 # Static images and icons
-│   ├── components/             # Reusable UI components
-│   │   ├── common/             # Navbar, Footer, Buttons, etc.
-│   │   ├── landing/            # Hero, Features
-│   │   ├── admin/              
-│   │   └── blog/               
-│   ├── pages/                  # Application pages
-│   ├── routes/                 # React Router routes
-│   ├── hooks/                  # Custom React hooks
-│   ├── utils/                  # Utility functions
-│   ├── context/                # React Context API providers
-│   ├── App.jsx                 # Root component
-│   ├── main.jsx               
-│   └── index.css               
-├── backend/                    # Backend (Vanilla Python)
-│   ├── app.py                  # Server entry point
-│   ├── routes/                 # Route handlers (auth, booking)
-│   ├── models/                 # Database models & connection
-│   ├── utils/                  
-│   └── data/                   
-├── tailwind.config.js
-├── postcss.config.js
-├── package.json
-├── vite.config.js
+├── public/                          # Public assets served by frontend (favicon, etc.)
+├── src/                             # React frontend source code
+│   ├── assets/                      
+│   ├── components/
+│   │   ├── common/                  # Navbar, Footer, Buttons
+│   │   ├── landing/                 # Hero, Features, etc.
+│   │   ├── admin/                   # Admin dashboard components
+│   │   └── blog/                    # Blog-related components
+│   ├── pages/                       # Pages like Login, Register, Home, etc.
+│   ├── routes/                      # React Router route definitions
+│   ├── hooks/                       # Custom React hooks
+│   ├── utils/                       # Utility/helper functions
+│   ├── context/                     # React Context providers
+│   ├── App.jsx                      # Root component
+│   ├── main.jsx                     # Vite entry point
+│   └── index.css                    # Global styles (Tailwind)
+├── backend/
+│   ├── app/                         # Flask app package
+│   │   ├── __init__.py              # Flask app factory
+│   │   ├── config.py                # App configuration (env, DB, etc.)
+│   │   ├── models/                  # SQLAlchemy models
+│   │   │   └── user.py              # User model
+│   │   │   └── appointment.py       # Appointment model
+│   │   ├── routes/                  # Blueprint routes
+│   │   │   └── auth_routes.py       # Login/Register routes
+│   │   │   └── booking_routes.py    # Appointment booking routes
+│   │   ├── utils/                   # Utility functions (email, JWT, validators)
+│   │   ├── services/                # Business logic layer
+│   │   └── schemas/                 # Input/output schemas (optional - e.g., with Marshmallow)
+│   ├── migrations/                 
+│   ├── run.py                       # Entry point to run Flask app
+│   └── requirements.txt             # Python dependencies
+├── tailwind.config.js               # Tailwind config
+├── postcss.config.js                # PostCSS config
+├── package.json                     # Node.js dependencies
+├── vite.config.js                   # Vite config
 └── README.md
+
 
 ```
 
