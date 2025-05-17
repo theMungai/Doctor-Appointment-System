@@ -1,4 +1,5 @@
 import React from 'react'
+import Inputs from "./common/Inputs.jsx";
 
 const Contact = () => {
   return (
@@ -14,35 +15,13 @@ const Contact = () => {
 
         <form>
             <div className='flex justify-between items-center mb-8'>
-                <div className='basis-[48%]'>
-                    <label>
-                        <span className='mb-2.5 text-[#282938] font-normal text-[19px] block '>First name</span>
-                        <input type="text"required placeholder='Enter your first name' className='p-4 text-[1rem] text-[#282938] border border-customTealBlue outline-none rounded-[6px] w-full ' />
-                    </label>
-                </div>
-
-                <div className='basis-[48%]'>
-                    <label>
-                        <span className='mb-2.5 text-[#282938] font-normal text-[19px] block '>Last name</span>
-                        <input type="text"required placeholder='Enter your last name' className='p-4 text-[1rem] text-[#282938] border border-customTealBlue outline-none rounded-[6px] w-full ' />
-                    </label>
-                </div>
+                <Inputs placeholder="Enter your last name" label="First name" text="text" basis="[48%]"/>
+                <Inputs placeholder="Enter your first name" label="Last name" text="text" basis="[48%]"/>
             </div>
 
             <div className='flex justify-between items-center mb-8'>
-                <div className='basis-[48%]'>
-                    <label>
-                        <span className='mb-2.5 text-[#282938] font-normal text-[19px] block '>Email</span>
-                        <input type="text"required placeholder='Enter your your email' className='p-4 text-[1rem] text-[#282938] border border-customTealBlue outline-none rounded-[6px] w-full ' />
-                    </label>
-                </div>
-
-                <div className='basis-[48%]'>
-                    <label>
-                        <span className='mb-2.5 text-[#282938] font-normal text-[19px] block '>Phone number</span>
-                        <input type="number"required placeholder='Enter your phone number' className='p-4 text-[1rem] text-[#282938] border border-customTealBlue outline-none rounded-[6px] w-full ' />
-                    </label>
-                </div>
+                <Inputs placeholder="Enter your your email" label="Email" text="email" basis="[48%]"/>
+                <Inputs placeholder="Enter your phone number" label="Phone number" text="number" basis="[48%]"/>
             </div>
 
             <label>

@@ -2,6 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCirclePlay } from '@fortawesome/free-solid-svg-icons';
 import FindDoctor from '../common/FindDoctor';
+import DocHero from "../common/DocHero.jsx";
 
 function Professionals({image}){
   return(
@@ -41,11 +42,7 @@ const Hero = () => {
         </div>
 
         <div className='relative hero-image-container basis-[48%]'>
-          <div className="relative rounded-blob w-[600px] h-[600px] bg-gradient-to-br from-customTealBlue to-customGreen  ">
-            <div className="relative w-[600px] h-[600px] right-0 top-[55%] transform -translate-y-1/2 z-10 rounded-imageBlob overflow-hidden">
-                <img src="images/home-hero.png" alt="" className='w-full h-full object-cover absolute ' />     
-            </div>
-          </div>
+          <DocHero />
 
           <div className="absolute top-20 left-[60%] w-[200px] z-20 bg-white rounded-[10px] px-7 py-3 text-customTealBlue font-bold shadow-md text-[23px]"> 
             24/7 <span className='text-black font-normal'>Service</span>

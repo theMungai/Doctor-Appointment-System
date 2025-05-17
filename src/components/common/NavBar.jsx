@@ -23,10 +23,10 @@ function NavBar() {
 
   return (
     <nav className="flex items-center justify-between font-lexend py-5 px-20">
-            <a href="#" className="text-customTealBlue text-[24px] font-bold logo flex items-center">
-            <img src="/images/logo.png" alt="Logo" className='w-[60px]'/>
-                Health<span className="text-customGreen">care</span>
-            </a>
+        <a href="#" className="text-customTealBlue text-[24px] font-bold logo flex items-center">
+        <img src="/images/logo.png" alt="Logo" className='w-[60px]'/>
+            Health<span className="text-customGreen">care</span>
+        </a>
         
 
         <ul className='flex items-center justify-between gap-x-6'>
@@ -34,10 +34,15 @@ function NavBar() {
         </ul>
 
         <div className="sign-up-login flex items-center gap-x-7">
-            <button className='bg-transparent text-customTealBlue text-[18px] font-lexend font-semibold cursor-pointer'>Sign Up</button>
+            <Link to="/sign-up">
+                <button className='bg-transparent text-customTealBlue text-[18px] font-lexend font-semibold cursor-pointer'>
+                    Sign Up
+                </button>
+            </Link>
 
-            <button className='bg-customTealBlue py-3 px-10 rounded-[8px] text-white text-[18px] font-lexend font-semibold cursor-pointer'>Log In</button>
-
+            <Link to="/login">
+                <button className='bg-customTealBlue py-3 px-10 rounded-[8px] text-white text-[18px] font-lexend font-semibold cursor-pointer'>Log In</button>
+            </Link>
         </div>
       
     </nav>
