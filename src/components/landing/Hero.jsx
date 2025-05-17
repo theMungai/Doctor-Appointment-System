@@ -96,7 +96,7 @@ const Hero = () => {
         </div>
 
         <div className="choose-us-image ">
-          <img src="images/services-choose-us.jpg" alt="Why Choose Us" className='w-full basis-[48%]' />
+          <img src="/images/services-choose-us.jpg" alt="Why Choose Us" className='w-full basis-[48%]' />
         </div>
       </div>
     </div>
